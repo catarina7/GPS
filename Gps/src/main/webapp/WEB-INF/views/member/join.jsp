@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <style type="text/css">
 	#joinform{
 		display: none;
@@ -13,11 +14,13 @@
 <script type="text/javascript">
 	
 	$(function(){		
-		$("#checkbox").click(function(){
-			alert("wow");
-			$("#check").prop("checked", function(){
-				$("#frm").css("display" : "block");
-			});
+		$("#checkbox").click(function(){			
+			 $("#check").prop("checked", function(){
+				 $("#joinform").css({"display":"block"}); 
+			}); 
+		});
+		$("#check").click(function(){			
+				$("#joinform").css({"display":"none"});		
 		});
 		
 	});
@@ -36,13 +39,14 @@
 
 	<div id="joinform">
 		<form action="" id="frm">
-			id: <input type="text" name="m_id" id="id"><br> 
-			pw: <input
-				type="text" name="m_pw" id="pw"><br> 
-			name: <input
-				type="text" name="m_name" id="name"><br> 
-			tel: <select
-				id="tel0" name="m_tel">
+			id: <input type="text" name="m_id" id="id">
+			<input type="button" id="id_check">
+			<br> 
+			
+			pw: <input type="password" name="m_pw" id="pw"><br> 
+			pwcheck: <input type="text" name="m_pw" id="pw"><br> 
+			name: <input type="text" name="m_name" id="name"><br> 
+			tel: <select id="tel0" name="m_tel">
 				<option value="SKT" selected>SKT</option>
 				<option value="LGT">LGT</option>
 				<option value="KT">KT</option>
@@ -61,6 +65,7 @@
 	
 		</form>
 	</div>
+	
 
 
 </body>
