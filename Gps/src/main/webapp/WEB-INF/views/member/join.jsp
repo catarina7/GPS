@@ -40,6 +40,7 @@
 	<div id="joinform">
 		<form action="" id="frm">
 			id: <input type="text" name="m_id" id="id">
+<<<<<<< HEAD
 			<input type="button" id="id_check">
 			<br> 
 			
@@ -47,6 +48,16 @@
 			pwcheck: <input type="text" name="m_pw" id="pw"><br> 
 			name: <input type="text" name="m_name" id="name"><br> 
 			tel: <select id="tel0" name="m_tel">
+=======
+			idcheck: <input type="button" id="id_check"><br> 
+			
+			pw: <input type="text" name="m_pw" id="pw"><br> 
+			pwcheck: <input type="text" id="pw_check"><br>
+			
+			name: <input type="text" name="m_name" id="name"><br> 
+			tel: <select
+				id="tel0" name="m_tel">
+>>>>>>> refs/heads/anbranch
 				<option value="SKT" selected>SKT</option>
 				<option value="LGT">LGT</option>
 				<option value="KT">KT</option>
